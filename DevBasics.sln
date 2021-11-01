@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "Extensi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternSingleton", "DesignPatternSingleton\DesignPatternSingleton.csproj", "{343FF938-D4D9-4FD1-8F71-8403F7577F6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicVsVarVsObject", "DynamicVsVarVsObject\DynamicVsVarVsObject.csproj", "{204B658D-4613-4167-A8B7-4B2B84CBCD13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{343FF938-D4D9-4FD1-8F71-8403F7577F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{343FF938-D4D9-4FD1-8F71-8403F7577F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{343FF938-D4D9-4FD1-8F71-8403F7577F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{204B658D-4613-4167-A8B7-4B2B84CBCD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{204B658D-4613-4167-A8B7-4B2B84CBCD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{204B658D-4613-4167-A8B7-4B2B84CBCD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{204B658D-4613-4167-A8B7-4B2B84CBCD13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
