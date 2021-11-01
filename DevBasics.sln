@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicVsVarVsObject", "Dyn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternObserver", "DesignPatternObserver\DesignPatternObserver.csproj", "{5935F54B-84F9-4CAC-B794-6B846BFF093A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternFactory", "DesignPatternFactory\DesignPatternFactory.csproj", "{3F2258B3-B2C7-4A23-BE92-E377E02EE55B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5935F54B-84F9-4CAC-B794-6B846BFF093A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5935F54B-84F9-4CAC-B794-6B846BFF093A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5935F54B-84F9-4CAC-B794-6B846BFF093A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2258B3-B2C7-4A23-BE92-E377E02EE55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2258B3-B2C7-4A23-BE92-E377E02EE55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2258B3-B2C7-4A23-BE92-E377E02EE55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2258B3-B2C7-4A23-BE92-E377E02EE55B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
