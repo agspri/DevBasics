@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{785D401B-E470-4751-BC77-D92F36E5C09B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{785D401B-E470-4751-BC77-D92F36E5C09B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternSingleton", "DesignPatternSingleton\DesignPatternSingleton.csproj", "{343FF938-D4D9-4FD1-8F71-8403F7577F6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternSingleton", "DesignPatternSingleton\DesignPatternSingleton.csproj", "{343FF938-D4D9-4FD1-8F71-8403F7577F6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicVsVarVsObject", "DynamicVsVarVsObject\DynamicVsVarVsObject.csproj", "{204B658D-4613-4167-A8B7-4B2B84CBCD13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicVsVarVsObject", "DynamicVsVarVsObject\DynamicVsVarVsObject.csproj", "{204B658D-4613-4167-A8B7-4B2B84CBCD13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternObserver", "DesignPatternObserver\DesignPatternObserver.csproj", "{5935F54B-84F9-4CAC-B794-6B846BFF093A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternObserver", "DesignPatternObserver\DesignPatternObserver.csproj", "{5935F54B-84F9-4CAC-B794-6B846BFF093A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternFactory", "DesignPatternFactory\DesignPatternFactory.csproj", "{3F2258B3-B2C7-4A23-BE92-E377E02EE55B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternFactory", "DesignPatternFactory\DesignPatternFactory.csproj", "{3F2258B3-B2C7-4A23-BE92-E377E02EE55B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternChainOfResponsibility", "DesignPatternChainOfResponsibility\DesignPatternChainOfResponsibility.csproj", "{E4C0C92C-8220-4B29-8960-E56E41B503BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternChainOfResponsibility", "DesignPatternChainOfResponsibility\DesignPatternChainOfResponsibility.csproj", "{E4C0C92C-8220-4B29-8960-E56E41B503BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums-Simple", "Enums-Simple\Enums-Simple.csproj", "{C7B8C597-28E2-4854-BA27-802ED18951C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums-Simple", "Enums-Simple\Enums-Simple.csproj", "{C7B8C597-28E2-4854-BA27-802ED18951C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternTemplateMethod", "DesignPatternTemplateMethod\DesignPatternTemplateMethod.csproj", "{1DC656A0-208B-493B-8C8A-43132DB8DB21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{C7B8C597-28E2-4854-BA27-802ED18951C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7B8C597-28E2-4854-BA27-802ED18951C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7B8C597-28E2-4854-BA27-802ED18951C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC656A0-208B-493B-8C8A-43132DB8DB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC656A0-208B-493B-8C8A-43132DB8DB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC656A0-208B-493B-8C8A-43132DB8DB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC656A0-208B-493B-8C8A-43132DB8DB21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
