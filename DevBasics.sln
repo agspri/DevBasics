@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternAdapter", "Des
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternEventAggregator", "DesignPatternEventAggregator\DesignPatternEventAggregator.csproj", "{F688D074-9899-4BD3-A07F-CF826722D860}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{B009823F-C3FE-4E13-8873-CCC13FB23EC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{F688D074-9899-4BD3-A07F-CF826722D860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F688D074-9899-4BD3-A07F-CF826722D860}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F688D074-9899-4BD3-A07F-CF826722D860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B009823F-C3FE-4E13-8873-CCC13FB23EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B009823F-C3FE-4E13-8873-CCC13FB23EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B009823F-C3FE-4E13-8873-CCC13FB23EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B009823F-C3FE-4E13-8873-CCC13FB23EC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
