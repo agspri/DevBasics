@@ -17,15 +17,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternChainOfRespons
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums-Simple", "Enums-Simple\Enums-Simple.csproj", "{C7B8C597-28E2-4854-BA27-802ED18951C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternTemplateMethod", "DesignPatternTemplateMethod\DesignPatternTemplateMethod.csproj", "{1DC656A0-208B-493B-8C8A-43132DB8DB21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternTemplateMethod", "DesignPatternTemplateMethod\DesignPatternTemplateMethod.csproj", "{1DC656A0-208B-493B-8C8A-43132DB8DB21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternIterator", "DesignPatternIterator\DesignPatternIterator.csproj", "{652EF45C-3EA4-4933-8645-A51841FABF1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternIterator", "DesignPatternIterator\DesignPatternIterator.csproj", "{652EF45C-3EA4-4933-8645-A51841FABF1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternAdapter", "DesignPatternAdapter\DesignPatternAdapter.csproj", "{F767BF2D-A223-4995-8FAE-CCAC8B6DF217}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternAdapter", "DesignPatternAdapter\DesignPatternAdapter.csproj", "{F767BF2D-A223-4995-8FAE-CCAC8B6DF217}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternEventAggregator", "DesignPatternEventAggregator\DesignPatternEventAggregator.csproj", "{F688D074-9899-4BD3-A07F-CF826722D860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternEventAggregator", "DesignPatternEventAggregator\DesignPatternEventAggregator.csproj", "{F688D074-9899-4BD3-A07F-CF826722D860}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{B009823F-C3FE-4E13-8873-CCC13FB23EC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{B009823F-C3FE-4E13-8873-CCC13FB23EC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWpfDemo", "AsyncDemo\AsyncWpfDemo.csproj", "{80807C39-180F-491F-81E1-0A5E88BD4074}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{B009823F-C3FE-4E13-8873-CCC13FB23EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B009823F-C3FE-4E13-8873-CCC13FB23EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B009823F-C3FE-4E13-8873-CCC13FB23EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80807C39-180F-491F-81E1-0A5E88BD4074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80807C39-180F-491F-81E1-0A5E88BD4074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80807C39-180F-491F-81E1-0A5E88BD4074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80807C39-180F-491F-81E1-0A5E88BD4074}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
