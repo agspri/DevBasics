@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WPF_Calculator
 {
-    public class PersonListViewModel : BaseViewModel
+    public class PersonListViewModel : NotifyableBaseObject
     {
         private ObservableCollection<Person> _persons = new ObservableCollection<Person>();
 

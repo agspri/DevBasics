@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WPF_Calculator
 {
-    public abstract class BaseViewModel : INotifyPropertyChanged
+    public abstract class NotifyableBaseObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;   // event PropertyChanged
 

@@ -15,7 +15,8 @@
             <ColumnDefinition Width="200*"/>
         </Grid.ColumnDefinitions>
         <ListBox Grid.Column="0"
-                 ItemsSource="{Binding Persons}">
+                 ItemsSource="{Binding Persons}"
+                 SelectedItem="{Binding NewPerson}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical">

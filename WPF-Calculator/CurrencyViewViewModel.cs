@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPF_Calculator
 {
-    class CurrencyViewViewModel : BaseViewModel
+    class CurrencyViewViewModel : NotifyableBaseObject
     {
         private decimal _value;
 

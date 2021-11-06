@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WPF_Calculator
 {
-    public class CalculatorWindowViewModel : BaseViewModel
+    public class CalculatorWindowViewModel : NotifyableBaseObject
     {
         public CalculatorWindowViewModel()
         {

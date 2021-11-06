@@ -74,7 +74,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BaseViewModel.cs" />
+    <Compile Include="NotifyableBaseObject.cs" />
     <Compile Include="CalculatorWindowViewModel.cs" />
     <Compile Include="CurrencyView.xaml.cs">
       <DependentUpon>CurrencyView.xaml</DependentUpon>
