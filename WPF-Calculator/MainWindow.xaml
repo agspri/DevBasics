@@ -10,8 +10,19 @@
         <!-- DataContext!!! -->
         <local:CalculatorWindowViewModel/>
     </Window.DataContext>
+    
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        <Style TargetType="Button" x:Key="LargerStyle">
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="Background" Value="green" />
+         </Style>
+    </Window.Resources>
+    
     <Grid>
-         <Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="5*" />
             <ColumnDefinition Width="5*" />
             <ColumnDefinition Width="5*" />
@@ -19,7 +30,7 @@
             <ColumnDefinition Width="5*" />
             <ColumnDefinition Width="5*" />
         </Grid.ColumnDefinitions>
-         <Grid.RowDefinitions>
+        <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -27,61 +38,77 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
+        <!-- 
+        <Grid.Resources>
+            <Style TargetType="Button">
+                    <Setter Property="Button.FontSize" Value="15" />
+            </Style> 
+        </Grid.Resources>
+        -->
+        
         <TextBox Grid.ColumnSpan="6" HorizontalAlignment="Left"
                  VerticalAlignment="Top" Width="400"
                      Margin="10" FontSize="30"
                  Text="{Binding CurrentValue}" 
                  />
-        <Button Content="1" Grid.Column="1" Grid.Row="2"  FontSize="20" 
+        <Button Content="1" Grid.Column="1" Grid.Row="2"  
                 Command="{Binding NumberCommand}"
-                CommandParameter="1" />
-        <Button Content="2" Grid.Column="2" Grid.Row="2"  FontSize="20"
+                CommandParameter="1">
+          <!--  <Button.Style>
+                <Style>
+                        <Setter Property="Button.FontSize" Value="5" />
+                </Style>
+            </Button.Style>
+            -->
+        </Button>
+        <Button Content="2" Grid.Column="2" Grid.Row="2"  
                 Command="{Binding NumberCommand}"
                 CommandParameter="2" />
-        <Button Content="3" Grid.Column="3" Grid.Row="2"  FontSize="20"
+        <Button Content="3" Grid.Column="3" Grid.Row="2"  
                 Command="{Binding NumberCommand}"
                 CommandParameter="3" />
 
-        <Button Content="4" Grid.Column="1" Grid.Row="3"  FontSize="20"
+        <Button Content="4" Grid.Column="1" Grid.Row="3"  
                 Command="{Binding NumberCommand}"
                 CommandParameter="4" />
-        <Button Content="5" Grid.Column="2" Grid.Row="3"  FontSize="20"
+        <Button Content="5" Grid.Column="2" Grid.Row="3"  
                 Command="{Binding NumberCommand}"
                 CommandParameter="5" />
-        <Button Content="6" Grid.Column="3" Grid.Row="3"  FontSize="20"
+        <Button Content="6" Grid.Column="3" Grid.Row="3"  
                 Command="{Binding NumberCommand}"
                 CommandParameter="6" />
 
-        <Button Content="7" Grid.Column="1" Grid.Row="4"  FontSize="20"
+        <Button Content="7" Grid.Column="1" Grid.Row="4"  
                 Command="{Binding NumberCommand}"
                 CommandParameter="7" />
-        <Button Content="8" Grid.Column="2" Grid.Row="4"  FontSize="20"
+        <Button Content="8" Grid.Column="2" Grid.Row="4"  
                 Command="{Binding NumberCommand}"
                 CommandParameter="8" />
-        <Button Content="9" Grid.Column="3" Grid.Row="4"  FontSize="20"
+        <Button Content="9" Grid.Column="3" Grid.Row="4"  
                 Command="{Binding NumberCommand}"
                 CommandParameter="9" />
 
-        <Button Content="+" Grid.Column="4" Grid.Row="2"  FontSize="20"
+        <Button Content="+" Grid.Column="4" Grid.Row="2"  
                 Command="{Binding OperatorCommand}"
                 CommandParameter="+" />
-        <Button Content="-" Grid.Column="4" Grid.Row="3"  FontSize="20"
+        <Button Content="-" Grid.Column="4" Grid.Row="3"  
                 Command="{Binding OperatorCommand}"
                 CommandParameter="-" />
-        <Button Content="*" Grid.Column="4" Grid.Row="4"  FontSize="20"
+        <Button Content="*" Grid.Column="4" Grid.Row="4"  
                 Command="{Binding OperatorCommand}"
                 CommandParameter="*" />
 
-        <Button Content="0" Grid.Column="2" Grid.Row="5"  FontSize="20"
+        <Button Content="0" Grid.Column="2" Grid.Row="5"  
                 Command="{Binding OperatorCommand}"
                 CommandParameter="0" />
-        <Button Content="=" Grid.Column="3" Grid.Row="5"  FontSize="20"
-                Background="LightGreen"
+        <Button Content="=" Grid.Column="3" Grid.Row="5"                 
+                Style="{StaticResource LargerStyle}"
                 Command="{Binding OperatorCommand}"
                 CommandParameter="=" />
-        <Button Content="/" Grid.Column="4" Grid.Row="5"  FontSize="20"
+        <Button Content="/" Grid.Column="4" Grid.Row="5"  
                 Command="{Binding OperatorCommand}"
                 CommandParameter="/" />
-
+        <!-- Background="LightGreen" -->
     </Grid>
 </Window>
