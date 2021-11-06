@@ -22,6 +22,11 @@ namespace WPF_Calculator
         public PersonList()
         {
             InitializeComponent();
+            ((PersonListViewModel)DataContext).MissingData += (sender, eventArgs) => ShowError();
+        }
+        public void ShowError()
+        {
+            MessageBox.Show("Please enter first name and last name");
         }
     }
 }

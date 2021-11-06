@@ -9,6 +9,26 @@ namespace WPF_Calculator
 {
     public class PersonListViewModel : NotifyableBaseObject
     {
+        public event EventHandler MissingData;
+
+        public PersonListViewModel()
+        {
+            this.AddPersonCommand = new DelegateCommad((o) =>
+            {
+                // will be called on button click
+                if (String.IsNullOrEmpty(NewPerson.FirstName) || String.IsNullOrEmpty(NewPerson.LastName))
+                {
+                    MissingData?.Invoke(this, EventArgs.Empty);
+                }
+                else
+                {
+                    this.Persons.Add(NewPerson);
+                    NewPerson = new Person();
+                }
+            });
+        }
+
+
         private ObservableCollection<Person> _persons = new ObservableCollection<Person>();
 
         public ObservableCollection<Person> Persons {
@@ -24,16 +44,7 @@ namespace WPF_Calculator
 
         Person _newPerson = new Person();
 
-        public PersonListViewModel()
-        {
-            this.AddPersonCommand = new DelegateCommad((o) =>
-            {
-                // will be called on button click
-                this.Persons.Add(NewPerson);
-                NewPerson = new Person();
-            });
-        }
-
+      
         public Person NewPerson
         {
             get => _newPerson;
