@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{56361F22-9CB0-4BAF-ABB3-81C466F9412E}</ProjectGuid>
+    <ProjectGuid>{705A815F-6F40-4DA6-B9B4-EA2A06B7E42B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WPF_Calculator</RootNamespace>
-    <AssemblyName>WPF-Calculator</AssemblyName>
+    <RootNamespace>WPF_ValueConverter</RootNamespace>
+    <AssemblyName>WPF-ValueConverter</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,18 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Person.cs" />
-    <Compile Include="PersonList.xaml.cs">
-      <DependentUpon>PersonList.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PersonListViewModel.cs" />
-    <Compile Include="ValueConverters\BoolToVisibilityConverter.cs" />
-    <Compile Include="ValueConverters\CurrencyValueConverter.cs" />
     <Page Include="CurrencyView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -74,23 +64,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BaseViewModel.cs" />
-    <Compile Include="CalculatorWindowViewModel.cs" />
     <Compile Include="CurrencyView.xaml.cs">
       <DependentUpon>CurrencyView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CurrencyViewViewModel.cs" />
-    <Compile Include="DelegateCommad.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PersonList.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrencyViewModel.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

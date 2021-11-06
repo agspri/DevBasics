@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_Calculator.CurrencyView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Calculator"
+        xmlns:vc="clr-namespace:WPF_Calculator.ValueConverters"
+        mc:Ignorable="d"
+        Title="CurrencyView" Height="400" Width="400">
+    <Window.DataContext>
+        <local:CurrencyViewViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <vc:CurrencyValueConverter x:Key="currency"/>
+        <vc:BoolToVisibilityConverter x:Key="bool2Visibility"/>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Text="{Binding Value, Converter={StaticResource currency}, ConverterParameter=€}" Width="100"/>
+            <Label Content="{Binding Value, Converter={StaticResource currency}}" Width="100"/>
+            <TextBox Text="{Binding Value, Converter={StaticResource currency}, ConverterParameter=$}" Width="100"/>
+            <Button Content="Hallo" Margin="20"
+                    Visibility="{Binding HasNonZeroValue, Converter={StaticResource bool2Visibility}}"/>
+        </StackPanel>
+    </Grid>
+</Window>
