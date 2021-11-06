@@ -12,13 +12,7 @@
     </Window.DataContext>
     
     <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="20" />
-        </Style>
-        <Style TargetType="Button" x:Key="LargerStyle">
-            <Setter Property="FontSize" Value="30" />
-            <Setter Property="Background" Value="green" />
-         </Style>
+        <ResourceDictionary Source="MyResources.xaml" />
     </Window.Resources>
     
     <Grid>
@@ -103,7 +97,7 @@
                 Command="{Binding OperatorCommand}"
                 CommandParameter="0" />
         <Button Content="=" Grid.Column="3" Grid.Row="5"                 
-                Style="{StaticResource LargerStyle}"
+                Style="{StaticResource ColoredStyle}"
                 Command="{Binding OperatorCommand}"
                 CommandParameter="=" />
         <Button Content="/" Grid.Column="4" Grid.Row="5"  
