@@ -26,6 +26,8 @@ namespace WPF_Calculator
                     NewPerson = new Person();
                 }
             });
+
+            AddSeveralPersons();
         }
 
 
@@ -60,5 +62,29 @@ namespace WPF_Calculator
 
         public DelegateCommad AddPersonCommand { get; set; }
 
+        private void AddSeveralPersons()
+        {
+            this.Persons.Add(new Person()
+            {
+                FirstName = "Susi",
+                LastName = "Müller",
+                Department = "Back Office"
+            });
+
+            this.Persons.Add(new Person()
+            {
+                FirstName = "Dave",
+                LastName = "Dev",
+                Department = "Software Development"
+            });
+
+            this.Persons.Add(new Person()
+            {
+                FirstName = "Hugo",
+                LastName = "Bossinger",
+                Department = "Managment"
+            });
+
+        }
     }
 }
