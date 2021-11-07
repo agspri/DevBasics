@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSyncVsAsyncVsParallel", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLibrary", "WpfLibrary\WpfLibrary.csproj", "{7D06F6BA-1EBD-47CF-BB6B-771F1634B87E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfReadCSV", "WpfReadCSV\WpfReadCSV.csproj", "{3C245DF2-1640-4B3D-A18A-DFD4CE1AD1BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{7D06F6BA-1EBD-47CF-BB6B-771F1634B87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D06F6BA-1EBD-47CF-BB6B-771F1634B87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D06F6BA-1EBD-47CF-BB6B-771F1634B87E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C245DF2-1640-4B3D-A18A-DFD4CE1AD1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C245DF2-1640-4B3D-A18A-DFD4CE1AD1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C245DF2-1640-4B3D-A18A-DFD4CE1AD1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C245DF2-1640-4B3D-A18A-DFD4CE1AD1BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
